@@ -1,0 +1,124 @@
+body {
+    background-color: #131111;
+    font-size: 20px;
+    color: #f4f4f4;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: auto; /* Change this line */
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: block;
+    margin: 40px auto;
+    max-width: 50%;
+}
+
+.text, .logotext {
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.logotext {
+    font-size: 2em;
+    color: #ff6347;
+}
+
+.buttonId {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(92, 161, 28);
+    color: #f4f4f4;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.2em; /* Adjusted font size for better visibility */
+    border-radius: 25px; /* Increased border-radius for a smoother look */
+    border: 2px solid #4caf50; /* Added a subtle border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+.buttonId:hover {
+    background-color: #4caf50; /* Darker green on hover */
+    color: #ffffff; /* White text on hover for better contrast */
+}
+
+
+.button-link{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.about-section, .features-section, .install-section {
+    background-color: #443b3b;
+    border-radius: 50%;
+    width: 80%;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.feature-item {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    position: relative; /* Change this line */
+    text-align: center;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.aboutfeatures {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #fff;
+    }
+
+    .aboutfeatures {
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 1em;
+        margin-top: 20px;
+        line-height: 1.4;
+    }
+
+    .logotext {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .buttonId {
+        padding: 10px 20px;
+        font-size: 1em;
+        margin-top: 15px;
+    }
+}
