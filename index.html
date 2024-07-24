@@ -1,73 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Poppins:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>SoCo - Youtube Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">	<link rel="stylesheet" href="theme.css" id="theme-stylesheet">
+    <title>YouTube Channel Stats</title>
+    <script src="app.js" type="module" defer></script>
 </head>
 <body>
-    <img class="logo" height="100px" src="SOC.png" alt="SoCo Logo">
-    <div class="aboutfeatures">
-        <section class="about-section">
-            <h2>
-                <span class="about-heading">About SoCo</span>
-            </h2>
-            <p>
-                SoCo, the Chrome extension, redefines online exploration.<br>
-                Effortlessly decode trends and grasp influencer dynamics with SoCo's intuitive design.<br>
-                Navigate the digital landscape seamlessly, gaining a competitive edge.<br>
-                Transform your online presence and strategy. SoCo isn't just an extension,<br>
-                it's your key to insightful and innovative digital experiences.
-            </p>
-        </section>
-        <section class="features-section">
-            <h2>
-                <span class="features-heading">Features</span>
-            </h2>
-            <ul class="features-list">
-                <li class="feature-item">Detailed Video Analytics</li>
-                <li class="feature-item">Audience Engagement Metrics</li>
-                <li class="feature-item">Real-time Data Updates</li>
-                <li class="feature-item">Customizable Dashboards</li>
-                <li class="feature-item">Influencer Performance Tracking</li>
-            </ul>
-        </section>
-        <section class="install-section">
-            <h2>Install SoCo Extension!</h2>
-            <button class="buttonId">
-                <a class="button-link" href="https://github.com/Chay2203/SoCo">Download SoCo</a>
-            </button>
-        </section>
-        <section class="testimonials-section">
-            <h2>What Our Users Say</h2>
-            <blockquote>
-                <p>"SoCo has transformed the way I analyze YouTube data. It's incredibly intuitive and powerful!"</p>
-                <cite>- Alex, Digital Marketer</cite>
-            </blockquote>
-            <blockquote>
-                <p>"A must-have tool for anyone serious about understanding their audience and content performance."</p>
-                <cite>- Jamie, Content Creator</cite>
-            </blockquote>
-        </section>
-        <section class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <h3>How do I install the SoCo extension?</h3>
-            <p>Simply click on the "Download SoCo" button above and follow the instructions on GitHub.</p>
-            <h3>Is SoCo free to use?</h3>
-            <p>Yes, SoCo is completely free to use.</p>
-            <h3>Can I customize the data dashboards?</h3>
-            <p>Absolutely! SoCo offers customizable dashboards to fit your specific needs.</p>
-        </section>
-    </div>
-    <footer class="footer">
-        <p>© 2023 SoCo. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://twitter.com/SoCo">Twitter</a> |
-            <a href="https://facebook.com/SoCo">Facebook</a> |
-            <a href="https://instagram.com/SoCo">Instagram</a>
+    <div id="popupDiv">
+        <div class="popHeader" align="center">
+            <div id="headTitle" style="color:black"><img width="90px" height="80px" class="inline-icon" src="icon.png"> 
+                <br> SoCo - YouTube Analytics
+            </div>
+            <br>
+            <div id="headChan" align="center" style="color:rgb(255, 0, 0)" class="chanTitle"></div>
+            <div id="headAlert" align="center" style="color:hsl(200, 5%, 30%)"></div>
         </div>
-    </footer>
+
+        <div class="grid">
+            <template id="result-temp">
+                <div class="result">
+                    <div class="tooltip">
+                        <div class="title" data-title>
+                            <div class="loading loading-title-text"></div>
+                            <div class="loading loading-title-text"></div>
+                        </div>
+                        <span class="tooltiptext"></span>
+                    </div>
+                    <div class="dataBody" data-body>
+                        <div class="loading loading-text"></div>
+                        <div class="loading loading-text"></div>
+                        <div class="loading loading-text"></div>
+                    </div>
+                </div>
+            </template>
+        </div>    
+    </div>
 </body>
 </html>
