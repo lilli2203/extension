@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">	<link rel="stylesheet" href="theme.css" id="theme-stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css" id="theme-stylesheet">
     <title>YouTube Channel Stats</title>
     <script src="app.js" type="module" defer></script>
 </head>
 <body>
     <div id="popupDiv">
         <div class="popHeader" align="center">
-            <div id="headTitle" style="color:black"><img width="90px" height="80px" class="inline-icon" src="icon.png"> 
+            <div id="headTitle" style="color:black">
+                <img width="90px" height="80px" class="inline-icon" src="icon.png"> 
                 <br> SoCo - YouTube Analytics
             </div>
             <br>
@@ -37,7 +39,58 @@
                     </div>
                 </div>
             </template>
-        </div>    
+        </div>
+        
+        <div class="statistics-section">
+            <h2>Channel Statistics</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>Total Views</h3>
+                    <p id="totalViews" class="stat-value">Loading...</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Subscribers</h3>
+                    <p id="subscribers" class="stat-value">Loading...</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Total Videos</h3>
+                    <p id="totalVideos" class="stat-value">Loading...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recent-videos-section">
+            <h2>Recent Videos</h2>
+            <div id="recentVideos" class="video-list">
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="thumbnail.png" alt="Video Thumbnail">
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title">Loading...</h4>
+                        <p class="video-date">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="engagement-metrics-section">
+            <h2>Engagement Metrics</h2>
+            <div class="metrics">
+                <div class="metric-item">
+                    <h3>Likes</h3>
+                    <p id="totalLikes" class="metric-value">Loading...</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Comments</h3>
+                    <p id="totalComments" class="metric-value">Loading...</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Shares</h3>
+                    <p id="totalShares" class="metric-value">Loading...</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
